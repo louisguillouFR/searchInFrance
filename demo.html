@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/french-address-bootstrap.css">
+</head>
+<body>
+<div class="container-fluid">
+    <h2>Moteur de recherche</h2>
+    <div class="row">
+        <div class="col-sm-2">
+            <input id="autocomplete" type="text"/>
+        </div>
+    </div>
+</div>
+<script
+        src="http://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+<script src="js/searchFrance.js"></script>
+
+<script>
+    var search = new autoSearch({
+        input_id: 'autocomplete',
+        theme: 'bootstrap',
+        limit: 2
+    });
+</script>
+</body>
+</html>
